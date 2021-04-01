@@ -1,0 +1,10 @@
+version: '3.1'
+
+services:
+  browser0:
+    build: .
+    environment:
+      X11VNC_RESOLUTION: 825x1200
+      KIOSK_URL: "https://vulfpeck.com" 
+    ports:
+     - 5900:5900
